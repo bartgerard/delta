@@ -23,7 +23,7 @@ public class WhenRest {
     public RestConfigurationRule rule = new RestConfigurationRule((RestConfigurationAction) () -> SerenityRest.setDefaultBasePath("rest/games"));
 
     @Steps
-    RestSteps restSteps;
+    private RestSteps restSteps;
 
     @Test
     public void test() {
